@@ -1,7 +1,7 @@
 import express from "express";
 const router = express.Router();
 
-import apiLimiter from "express-rate-limit";
+import rateLimiter from "express-rate-limit";
 
 const apiLimiter = rateLimiter({
   windowMS: 15 * 60 * 1000, // 15 minutes
